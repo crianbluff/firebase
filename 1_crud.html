@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>
+			Crud - Firebase
+		</title>
+	</head>
+
+	<body>
+
+		<h1>
+			CRUD con firebase
+		</h1>
+
+		<h2>
+			Lista de Contactos
+		</h2>
+
+		<h3>
+			Create / Update
+		</h3>
+
+		<form action="javascript:void(0);">
+			<input type="text" id="name" placeholder="Tu nombre" required="required">
+			<br>
+
+			<input type="email" id="email" placeholder="Tu email" required="required">
+			<br>
+
+			<input type="hidden" id="id">
+			<input type="submit" value="Enviar">
+		</form>
+
+		<h3>
+			Read / Delete
+		</h3>
+
+		<ul id="contacts"></ul>
+
+		<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+		<script src="js/crud.js"></script>
+	</body>
+</html>
