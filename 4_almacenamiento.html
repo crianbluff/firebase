@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+			<title>
+				Almacenamiento Firebase
+			</title>
+		<style>
+
+			body {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				min-height: 100vh;
+				width: 100%;
+			}
+
+			#progress-bar {
+				-webkit-appearance: none;
+				appearance: none;
+				margin-bottom: 1rem;
+				width: 50%;
+			}
+		
+		</style>
+	</head>
+
+	<body>
+
+		<h1>
+			Almacenamiento Firebase
+		</h1>
+
+		<progress id="progress-bar" value="0" max="100"></progress>
+
+		<form action="javascript.void(0);" id="upload">
+			<input type="file" id="uploader" multiple="multiple">
+		</form>
+		
+		<span id="progress-advance"></span>
+		<div id="output"></div>
+
+		<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+		<script src="js/almacenamiento.js"></script>
+	</body>
+</html>

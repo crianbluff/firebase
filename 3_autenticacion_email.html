@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>
+			Autenticación Con Email En Firebase
+		</title>
+	</head>
+
+	<body>
+
+		<h1>
+			Autenticación Con Email En Firebase
+		</h1>
+
+		<h2>
+			Registro De Usuarios (Sign In)
+		</h2>
+
+		<form action="javascript:void(0);" id="sign-in">
+			<input type="text" name="name" placeholder="Tu Nombre" required="required">
+			<br>
+
+			<input type="email" name="email" placeholder="Tu Email" required="required">
+			<br>
+
+			<input type="password" name="password" placeholder="Tu Contraseña" required="required">
+			<br>
+
+			<input type="submit" value="Registrar">
+		</form>
+
+		<div id="sign-in-message"></div>
+
+		<h2>
+			Inicio De Sesión (Log In)
+		</h2>
+		
+		<form action="javascript:void(0);" id="login">
+			<input type="email" name="email" placeholder="Tu Email" required="required">
+			<br>
+
+			<input type="password" name="password" placeholder="Tu Contraseña" required="required">
+			<br>
+
+			<input type="submit" value="Ingresar">
+		</form>
+
+		<div id="login-message"></div>
+		<p id="session-message"></p>
+
+		<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+		<script src="js/autenticacion-email.js"></script>
+	</body>
+</html>
